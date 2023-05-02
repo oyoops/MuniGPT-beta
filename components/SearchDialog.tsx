@@ -68,7 +68,7 @@ export function SearchDialog() {
   const [promptIndex, setPromptIndex] = React.useState(0)
   const [promptData, dispatchPromptData] = React.useReducer(promptDataReducer, [])
 
-  const cantHelp = answer?.trim() === "Sorry, can't help you with that one, buddy."
+  const cantHelp = answer?.trim() === "Sorry, cannot help you with that one, buddy."
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -197,7 +197,7 @@ export function SearchDialog() {
           <DialogHeader>
             <DialogTitle>MuniGPT, Powered by oyoopsAI</DialogTitle>
             <DialogDescription>
-              Ask me anything about Broward County's regulations on development, construction, zoning...
+              Ask me anything about Broward County regulations on development, construction, zoning...
             </DialogDescription>
             <hr />
             <button className="absolute top-0 right-2 p-2" onClick={() => setOpen(false)}>
@@ -230,7 +230,7 @@ export function SearchDialog() {
                     <Frown width={18} />
                   </span>
                   <span className="text-slate-700 dark:text-slate-100">
-                    Uh-oh... That search failed. If I knew why, I'd be working at Google right now. Better luck next time!
+                    Uh-oh... That search failed. If I knew why, I would be working at Google right now. Better luck next time!
                   </span>
                 </div>
               )}
