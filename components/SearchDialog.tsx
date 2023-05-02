@@ -68,7 +68,7 @@ export function SearchDialog() {
   const [promptIndex, setPromptIndex] = React.useState(0)
   const [promptData, dispatchPromptData] = React.useReducer(promptDataReducer, [])
 
-  const cantHelp = answer?.trim() === "Sorry, I don't know how to help with that."
+  const cantHelp = answer?.trim() === "Sorry, can't help you with that one, buddy."
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -195,9 +195,9 @@ export function SearchDialog() {
       <Dialog open={open}>
         <DialogContent className="sm:max-w-[850px] text-black">
           <DialogHeader>
-            <DialogTitle>OpenAI powered doc search</DialogTitle>
+            <DialogTitle>MuniGPT, Powered by oyoopsAI</DialogTitle>
             <DialogDescription>
-              Build your own ChatGPT style search with Next.js, OpenAI & Supabase.
+              Ask me anything about Broward County's regulations on development, construction, zoning...
             </DialogDescription>
             <hr />
             <button className="absolute top-0 right-2 p-2" onClick={() => setOpen(false)}>
@@ -230,7 +230,7 @@ export function SearchDialog() {
                     <Frown width={18} />
                   </span>
                   <span className="text-slate-700 dark:text-slate-100">
-                    Sad news, the search has failed! Please try again.
+                    Uh-oh... That search failed. If I knew why, I'd be working at Google right now. Better luck next time!
                   </span>
                 </div>
               )}
@@ -247,7 +247,7 @@ export function SearchDialog() {
 
               <div className="relative">
                 <Input
-                  placeholder="Ask a question..."
+                  placeholder="Ask me anything... e.g. What impact fees are charged on new multifamily construction?"
                   name="search"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
@@ -272,7 +272,7 @@ export function SearchDialog() {
                     setSearch('Create a table called profiles with fields id, name, email')
                   }
                 >
-                  Create a table called profiles with fields id, name, email
+                  Test
                 </button>
               </div>
             </div>

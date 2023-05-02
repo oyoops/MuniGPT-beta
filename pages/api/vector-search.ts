@@ -117,14 +117,15 @@ export default async function handler(req: NextRequest) {
 
     const prompt = codeBlock`
       ${oneLine`
-        You are a very enthusiastic Supabase representative who loves
-        to help people! Given the following sections from the Supabase
-        documentation, answer the question using only that information,
-        outputted in markdown format. If you are unsure and the answer
-        is not explicitly written in the documentation, say
-        "Sorry, I don't know how to help with that."
+        You are a very enthusiastic land development and construction expert 
+        who loves to help people! Given the following sections from the Municode library
+        of Broward County, Florida, answer the question using only that information,
+        outputted in markdown format. If you are unsure and the answer is not explicitly 
+        written in the documentation, say this phrase or a close variation of it: 
+        "I could BS you, but I won't. I don't know the answer to that question. 
+        Looks like AI won't be replacing your job any time soon!"
       `}
-
+      
       Context sections:
       ${contextText}
 
@@ -138,8 +139,8 @@ export default async function handler(req: NextRequest) {
     const completionOptions: CreateCompletionRequest = {
       model: 'text-davinci-003',
       prompt,
-      max_tokens: 512,
-      temperature: 0,
+      max_tokens: 1024,
+      temperature: 0.2,
       stream: true,
     }
 
