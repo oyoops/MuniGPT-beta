@@ -197,7 +197,7 @@ export function SearchDialog() {
           <DialogHeader>
             <DialogTitle>MuniGPT, Powered by oyoopsAI</DialogTitle>
             <DialogDescription>
-              Ask me anything about Broward County regulations on development, construction, zoning...
+              Ask me anything about zoning, land use, and building code regulations in Broward County, Florida.
             </DialogDescription>
             <hr />
             <button className="absolute top-0 right-2 p-2" onClick={() => setOpen(false)}>
@@ -247,7 +247,7 @@ export function SearchDialog() {
 
               <div className="relative">
                 <Input
-                  placeholder="Ask me anything... e.g. What impact fees are charged on new multifamily construction?"
+                  placeholder="Can I convert my farm building into an accessory dwelling unit?"
                   name="search"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
@@ -260,7 +260,7 @@ export function SearchDialog() {
                 />
               </div>
               <div className="text-xs text-gray-500 dark:text-gray-100">
-                Or try:{' '}
+                Cool{' '}
                 <button
                   type="button"
                   className="px-1.5 py-0.5
@@ -272,7 +272,7 @@ export function SearchDialog() {
                     setSearch('Create a table called profiles with fields id, name, email')
                   }
                 >
-                  Test
+                  !
                 </button>
               </div>
             </div>
