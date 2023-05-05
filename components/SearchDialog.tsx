@@ -230,7 +230,7 @@ export function SearchDialog() {
                     <Frown width={18} />
                   </span>
                   <span className="text-slate-700 dark:text-slate-100">
-                    Uh-oh... That search failed. If I knew why, I'd be working at Google. Better luck next time?
+                    Uh-oh... That search failed. If I knew why, I would be working at Google. Better luck next time?
                   </span>
                 </div>
               )}
