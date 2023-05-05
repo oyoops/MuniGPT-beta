@@ -260,7 +260,7 @@ export function SearchDialog() {
                 />
               </div>
               <div className="text-xs text-gray-500 dark:text-gray-100">
-                Example {'Try me!'}
+                Example {' '}
                 <button
                   type="button"
                   className="px-1.5 py-0.5
@@ -272,7 +272,7 @@ export function SearchDialog() {
                     setSearch('Can I convert my farm building into an accessory dwelling unit?')
                   }
                 >
-                  !
+                  Try me!
                 </button>
               </div>
             </div>
