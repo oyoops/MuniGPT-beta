@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>MuniGPT, Powered by oyoopsAI</title>
+        <title>MuniGPT (beta)</title>
         <meta
           name="description"
-          content="Ask me anything about development regulations in Broward County, FL. Powered by oyoopsAI."
+          content="Ask me anything about zoning/land use regulations or the building code in Broward County, FL."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -26,9 +26,9 @@ export default function Home() {
 
         <div className="py-8 w-full flex items-center justify-center space-x-6">
           <div className="opacity-75 transition hover:opacity-100 cursor-pointer">
-            <Link href="https://oyoops.com" className="flex items-center justify-center">
-              <p className="text-base mr-2">Built by @oyoops</p>
-              <Image src={'/supabase.svg'} width="20" height="20" alt="oyoops logo" />
+            <Link href="https://twitter.com/oyoops" className="flex items-center justify-center">
+              <p className="text-base mr-2">by @oyoops</p>
+              <Image src={'/twitter.svg'} width="20" height="20" alt="oyoops logo" />
             </Link>
           </div>
           <div className="border-l border-gray-300 w-1 h-4" />
@@ -43,10 +43,10 @@ export default function Home() {
             </div>
             <div className="opacity-75 transition hover:opacity-100 cursor-pointer">
               <Link
-                href="https://twitter.com/oyoops"
+                href="https://oyoops.com"
                 className="flex items-center justify-center"
               >
-                <Image src={'/twitter.svg'} width="20" height="20" alt="Twitter logo" />
+                <Image src={'/supabase.svg'} width="20" height="20" alt="Twitter logo" />
               </Link>
             </div>
           </div>
