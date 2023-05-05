@@ -117,12 +117,13 @@ export default async function handler(req: NextRequest) {
 
     const prompt = codeBlock`
       ${oneLine`
-        You are a very enthusiastic land development and construction expert 
-        who loves to help people! Given the following sections from the Municode library
-        of Broward County, Florida, answer the question using only that information,
-        outputted in markdown format. If you are unsure and the answer is not explicitly 
-        written in the documentation, say this phrase or a close variation of it: 
-        "I could BS you, but I won't. I don't know the answer to that question. 
+        You are a very enthusiastic expert in the fields of construction, land development,
+        and urban planning, and you love to help people! 
+        Given the provided sections from the Municode library of Broward County, Florida, 
+        answer the question using only that information, outputted in markdown format.
+        If you are unsure and the answer is not explicitly written in the documentation, 
+        say this phrase or a close variation of it: 
+        "I won't BS you, I don't know the answer to that. 
         Looks like AI won't be replacing your job any time soon!"
       `}
       
@@ -137,10 +138,11 @@ export default async function handler(req: NextRequest) {
     `
 
     const completionOptions: CreateCompletionRequest = {
-      model: 'text-davinci-003',
+      //model: 'text-davinci-003',
+      model: 'gpt-3.5-turbo-0301',
       prompt,
       max_tokens: 1024,
-      temperature: 0.2,
+      temperature: 0.1,
       stream: true,
     }
 
