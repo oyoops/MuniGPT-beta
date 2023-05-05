@@ -195,9 +195,9 @@ export function SearchDialog() {
       <Dialog open={open}>
         <DialogContent className="sm:max-w-[850px] text-black">
           <DialogHeader>
-            <DialogTitle>MuniGPT, Powered by oyoopsAI</DialogTitle>
+            <DialogTitle>MuniGPT: Broward County</DialogTitle>
             <DialogDescription>
-              Ask me anything about zoning, land use, and building code regulations in Broward County, Florida.
+              Ask me anything about zoning/land use regulations or the building code in Broward County, FL.
             </DialogDescription>
             <hr />
             <button className="absolute top-0 right-2 p-2" onClick={() => setOpen(false)}>
@@ -247,7 +247,7 @@ export function SearchDialog() {
 
               <div className="relative">
                 <Input
-                  placeholder="Can I convert my farm building into an accessory dwelling unit?"
+                  placeholder="Can I convert a farm building into an accessory dwelling unit?"
                   name="search"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
@@ -269,7 +269,7 @@ export function SearchDialog() {
                   rounded border border-slate-200 dark:border-slate-600
                   transition-colors"
                   onClick={(_) =>
-                    setSearch('Create a table called profiles with fields id, name, email')
+                    setSearch('Create a table describing all of the zoning classifications in Broward County.')
                   }
                 >
                   !
