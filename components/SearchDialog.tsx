@@ -68,7 +68,7 @@ export function SearchDialog() {
   const [promptIndex, setPromptIndex] = React.useState(0)
   const [promptData, dispatchPromptData] = React.useReducer(promptDataReducer, [])
 
-  const cantHelp = answer?.trim() === "Sorry, cannot help you with that one, buddy."
+  const cantHelp = answer?.trim() === "Sorry, I cannot help you with that one, buddy."
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -189,7 +189,7 @@ export function SearchDialog() {
           text-slate-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400
           opacity-100 "
         >
-          <span className="text-xs">⌘</span>K
+          <span className="text-xs">GO</span>
         </kbd>{' '}
       </button>
       <Dialog open={open}>
@@ -230,7 +230,7 @@ export function SearchDialog() {
                     <Frown width={18} />
                   </span>
                   <span className="text-slate-700 dark:text-slate-100">
-                    Uh-oh... That search failed. If I knew why, I would be working at Google right now. Better luck next time!
+                    Uh-oh... That search failed. If I knew why, I'd be working at Google. Better luck next time?
                   </span>
                 </div>
               )}
@@ -247,7 +247,7 @@ export function SearchDialog() {
 
               <div className="relative">
                 <Input
-                  placeholder="Can I convert a farm building into an accessory dwelling unit?"
+                  placeholder="Can I convert my farm building into an accessory dwelling unit?"
                   name="search"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
@@ -260,7 +260,7 @@ export function SearchDialog() {
                 />
               </div>
               <div className="text-xs text-gray-500 dark:text-gray-100">
-                Cool{' '}
+                Example {'Try me!'}
                 <button
                   type="button"
                   className="px-1.5 py-0.5
@@ -269,7 +269,7 @@ export function SearchDialog() {
                   rounded border border-slate-200 dark:border-slate-600
                   transition-colors"
                   onClick={(_) =>
-                    setSearch('Create a table describing all of the zoning classifications in Broward County.')
+                    setSearch('Can I convert my farm building into an accessory dwelling unit?')
                   }
                 >
                   !
