@@ -12,6 +12,8 @@ return (
 <>
 <Head>
 <title>MuniGPT (beta)</title>
+</br>
+</br>
 <meta
        name="description"
        content="Ask me anything about zoning/land use regulations or the building code in Broward County, FL."
@@ -23,7 +25,9 @@ return (
 <div className={styles.center}>
 <h1 className={styles.title}>MuniGPT</h1>
 <p className={styles.description}>
-MuniGPT is an AI-powered tool designed to answer questions about zoning, land use regulations, and the building code in Broward County, FL. Please note that this is a beta version and may not always provide accurate or complete information. Always consult official sources for the most accurate and up-to-date information.
+</br>
+<b>MuniGPT</b> is an AI-powered tool designed to answer questions about zoning, land use regulations, and the building code in Broward County, FL. Please note that this is a beta version and may not always provide accurate or complete information. Always consult official sources for the most accurate and up-to-date information.
+</br>
 </p>
 <SearchDialog />
 </div>
