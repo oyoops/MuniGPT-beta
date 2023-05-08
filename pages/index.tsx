@@ -19,12 +19,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main className={`${styles.main} flex flex-col items-center`}>
+        <h1 className={`text-4xl mb-4`}>MuniGPT</h1>
+        <p className={`mb-4`}>
+          MuniGPT is an AI-powered tool designed to answer questions about zoning, land use regulations, and the building code in Broward County, FL. Please note that this is a beta version and may not always provide accurate or complete information. Always consult official sources for the most accurate and up-to-date information.
+        </p>
         <div className={styles.center}>
-          <h1 className={`${styles.title} text-4xl mb-4`}>MuniGPT</h1>
-          <p className={`${styles.description} mb-4`}>
-            MuniGPT is an AI-powered tool designed to answer questions about zoning, land use regulations, and the building code in Broward County, FL. Please note that this is a beta version and may not always provide accurate or complete information. Always consult official sources for the most accurate and up-to-date information.
-          </p>
           <SearchDialog />
         </div>
         <div className="py-8 w-full flex items-center justify-center space-x-6">
