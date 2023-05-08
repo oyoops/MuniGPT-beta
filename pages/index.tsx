@@ -31,12 +31,6 @@ export default function Home() {
           <div className="border-l border-gray-300 w-1 h-4" />
           <div className="flex items-center justify-center space-x-4">
             <div className="opacity-75 transition hover:opacity-100 cursor-pointer">
-              <Link
-                href="https://oyoops.com"
-                className="flex items-center justify-center"
-              >
-                <Image src={'/supabase.svg'} width="20" height="20" alt="oyoops logo" />
-              </Link>
             </div>
           </div>
         </div>
