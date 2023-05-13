@@ -20,7 +20,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} flex flex-col items-center`}>
-        <h1 className={`text-4xl mb-4`}>MuniGPT</h1>
+        <div className={`mb-4`}>
+          <Image src="/logo.png" alt="MuniGPT Logo" width={200} height={100} />
+        </div>
         <p className={`mb-4`}>
           MuniGPT is an AI-powered tool designed to answer questions about zoning, land use regulations, and the building code in Broward County, FL. Please note that this is a beta version and may not always provide accurate or complete information. Always consult official sources for the most accurate and up-to-date information.
         </p>
