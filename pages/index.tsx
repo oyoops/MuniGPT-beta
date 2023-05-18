@@ -30,9 +30,8 @@ export default function Home() {
           <SearchDialog />
         </div>
         <div className="py-8 w-full flex items-center justify-center space-x-6">
-          <div className="border-l border-gray-300 w-1 h-4" />
           <div className="flex items-center justify-center space-x-4">
-            Created by <u><a href="https://nicksander.xyz">Nick S.</a></u>
+            Created by <u><a href="https://nicksander.xyz"> Nick S.</a></u>
           </div>
         </div>
       </main>
