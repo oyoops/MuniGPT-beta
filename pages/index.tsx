@@ -35,9 +35,7 @@ export default function Home() {
         <div className="py-8 w-full flex items-center justify-center space-x-6">
           <div className="border-l border-gray-300 w-1 h-4" />
           <div className="flex items-center justify-center space-x-4">
-            <a href="https://library.municode.com/fl/broward_county">Broward County Municode Library</a> 
-             <div className="opacity-75 transition hover:opacity-100 cursor-pointer"></div> 
-             By <a href="https://nicksander.xyz">Nick S.</a>
+            <a href="https://nicksander.xyz">- Nick S.</a>
           </div>
         </div>
       </main>
