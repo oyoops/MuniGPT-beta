@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>MuniGPT (beta)</title>
+        <title>MuniGPT</title>
         <meta
           name="description"
           content="Ask me anything about zoning/land use regulations or the building code in Broward County, FL."
