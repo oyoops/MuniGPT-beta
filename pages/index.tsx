@@ -29,9 +29,9 @@ export default function Home() {
         <div className={styles.center}>
           <SearchDialog />
         </div>
-        <div style={{fontSize: '10px'}} className="py-8 w-full flex items-center justify-center space-x-6">
+        <div style={{fontSize: '11px'}} className="py-8 w-full flex items-center justify-center space-x-6">
           <div className="flex items-center justify-center space-x-4">
-            <u><a href="https://nicksander.xyz">Created by Nick S.</a></u>
+            <a href="https://nicksander.xyz">Created by <u>Nick S.</u></a>
           </div>
         </div>
       </main>
