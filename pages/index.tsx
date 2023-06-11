@@ -31,7 +31,7 @@ export default function Home() {
         </div>
         <div style={{fontSize: '11px'}} className="py-8 w-full flex items-center justify-center space-x-6">
           <div className="flex items-center justify-center space-x-4">
-            Created by  <b>oyoops</b>, progenitor of the revolutionary <u><a href="https://sandyai.xyz">SandyAI</a></u>.
+            Created by oyoops (HEAT in 7).
           </div>
         </div>
       </main>
