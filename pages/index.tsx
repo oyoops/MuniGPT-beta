@@ -24,7 +24,7 @@ export default function Home() {
           <Image src="/logo.png" alt="MuniGPT Logo" width={400} height={200} />
         </div>
         <p className={`mb-4`}>
-          MuniGPT is an AI-powered tool designed to answer questions about zoning, land use regulations, and the building code in Broward County, FL. This is a beta version, so it may not always understand your wording or provide you with the entire answer. Trust but verify what MuniGPT says by checking <u><a href="https://library.municode.com/fl/broward_county">official sources</a></u>.
+          MuniGPT is an AI-powered tool designed to answer questions about zoning, land use regulations, and the building code in Broward County, FL. This is a beta version, so it may not always understand your wording or provide you with the entire answer. Trust but verify what MuniGPT says!
         </p>
         <div className={styles.center}>
           <SearchDialog />
