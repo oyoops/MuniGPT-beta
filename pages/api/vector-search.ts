@@ -122,9 +122,7 @@ export default async function handler(req: NextRequest) {
         Given the provided sections from the Municode library of Broward County, Florida, 
         answer the question using only that information, outputted in markdown format.
         If you are unsure and the answer is not explicitly written in the documentation, 
-        say this phrase or a close variation of it: 
-        "I won't BS you, I don't know the answer to that. 
-        Looks like AI won't be replacing your job any time soon!"
+        say: "Sorry, I don't know the answer to that."
       `}
       
       Context sections:
@@ -139,8 +137,8 @@ export default async function handler(req: NextRequest) {
 
     const completionOptions: CreateCompletionRequest = {
       //model: 'text-davinci-003',
-      //model: 'gpt-3.5-turbo',
-      model: 'gpt-4',
+      model: 'gpt-3.5-turbo',
+      //model: 'gpt-4',
       prompt,
       max_tokens: 1024,
       temperature: 0.1,
