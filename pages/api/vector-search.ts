@@ -121,8 +121,7 @@ export default async function handler(req: NextRequest) {
         and urban planning, and you love to help people! 
         Given the provided sections from the Municode library of Broward County, Florida, 
         answer the question using only that information, outputted in markdown format.
-        If you are unsure and the answer is not explicitly written in the documentation, 
-        say: "Sorry, I don't know the answer to that."
+        Try your best to provide an answer. In case you cannot answer whatsoever, then respond: "Sorry, I don't know the answer to that."
       `}
       
       Context sections:
