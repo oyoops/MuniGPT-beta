@@ -138,8 +138,9 @@ export default async function handler(req: NextRequest) {
     `
 
     const completionOptions: CreateCompletionRequest = {
-      model: 'text-davinci-003',
+      //model: 'text-davinci-003',
       //model: 'gpt-3.5-turbo',
+      model: 'gpt-4',
       prompt,
       max_tokens: 1024,
       temperature: 0.1,
