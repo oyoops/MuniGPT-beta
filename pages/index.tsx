@@ -11,6 +11,9 @@ export default function Home() {
   return (
     <>
       <Head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6656205365711369"
+     crossorigin="anonymous"></script>
+        
         <title>MuniGPT</title>
         <meta
           name="description"
