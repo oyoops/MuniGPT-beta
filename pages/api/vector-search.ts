@@ -108,7 +108,8 @@ export default async function handler(req: NextRequest) {
       const encoded = tokenizer.encode(content)
       tokenCount += encoded.text.length
 
-      if (tokenCount >= 1500) {
+      //if (tokenCount >= 1500) {
+      if (tokenCount >= 2000) {
         break
       }
 
@@ -117,12 +118,10 @@ export default async function handler(req: NextRequest) {
 
     const prompt = codeBlock`
       ${oneLine`
-        You are a very enthusiastic expert in the fields of construction, land development,
-        and urban planning, and you love to help people! 
-        Given the provided sections from the Municode library of Broward County, Florida, 
-        answer the question using only that information, outputted in markdown format.
-        If you are unsure and the answer is not explicitly written in the documentation, 
-        say: "Sorry, I don't know the answer to that."
+        You are an expert in the brand new legislation that just passed in Florida, changing the real estate development environment a lot. 
+        The 'Live Local Act' (also known as Senate Bill 102 or SB-102) makes many changes to future residential developments.
+        Given the provided text of the legislation and your knowledge of real estate development, answer the question posed by the user.
+        Output your answer in markdown format. Always do your best to provide an answer; rarely should you ever admit you don't know something.
       `}
       
       Context sections:
@@ -136,10 +135,10 @@ export default async function handler(req: NextRequest) {
     `
 
     const completionOptions: CreateCompletionRequest = {
-      model: 'text-davinci-003',
+      model: 'gpt-4',
       prompt,
-      max_tokens: 1024,
-      temperature: 0.1,
+      max_tokens: 2048,
+      temperature: 0.2,
       stream: true,
     }
 
