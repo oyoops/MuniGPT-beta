@@ -122,7 +122,7 @@ export default async function handler(req: NextRequest) {
         Given the provided sections from the Municode library of Broward County, Florida, 
         answer the question using only that information, outputted in markdown format.
         If you are unsure and the answer is not explicitly written in the documentation, 
-        say: "Sorry, I don't know the answer to that."
+        say: Sorry, I don't know the answer to that.
       `}
       
       Context sections:
