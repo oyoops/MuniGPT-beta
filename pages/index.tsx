@@ -24,14 +24,16 @@ export default function Home() {
           <Image src="/logo.png" alt="MuniGPT Logo" width={400} height={200} />
         </div>
         <p className={`mb-4`}>
-          MuniGPT can answer questions about the building code and land use/zoning regulations of Broward County, Florida.
+          MuniGPT can answer questions about the building code and land use/zoning regulations in Broward County, Florida.
+          That said, it uses an outdated and obsolete AI model.
+          Give MuniGPT a try, but then head to oyoops.com to use a much smarter AI that is trained on the Live Local Act (SB-102).
         </p>
         <div className={styles.center}>
           <SearchDialog />
         </div>
         <div style={{fontSize: '11px'}} className="py-8 w-full flex items-center justify-center space-x-6">
           <div className="flex items-center justify-center space-x-4">
-            Created by Nick S.
+            Created by <a href="https://twitter.com/oyoops">@oyoops</a>.
           </div>
         </div>
       </main>
