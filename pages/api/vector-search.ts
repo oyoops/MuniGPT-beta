@@ -135,14 +135,14 @@ export default async function handler(req: NextRequest) {
     `
 
     const completionOptions: CreateCompletionRequest = {
-      model: 'gpt-3.5-turbo',
+      model: 'text-davinci-003',
       prompt,
       max_tokens: 2048,
       temperature: 0.2,
       stream: true,
     }
 
-    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+    const response = await fetch('https://api.openai.com/v1/completions', {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${openAiKey}`,
