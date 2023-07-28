@@ -195,9 +195,11 @@ export function SearchDialog() {
       <Dialog open={open}>
         <DialogContent className="sm:max-w-[850px] text-black">
           <DialogHeader>
-            <DialogTitle>MuniGPT: Broward County</DialogTitle>
+            <DialogTitle>MuniGPT</DialogTitle>
             <DialogDescription>
-              Ask me anything about zoning/land use regulations or the building code in Broward County, FL.
+              At some point in the future, you will be able to ask me anything about zoning and land use regulations or the building code of any Florida county. 
+              But not today. AI has advanced so quickly that the engine that powers MuniGPT has become obsolete and needs to be rewritten from scratch.
+              Until then, you can use the latest, greatest AI model I'm working on at <a href="https://oyoops.com">oyoops.com</a>; but it can only speak on the Live Local Act (SB-102) - arguably more valuable!"
             </DialogDescription>
             <hr />
             <button className="absolute top-0 right-2 p-2" onClick={() => setOpen(false)}>
