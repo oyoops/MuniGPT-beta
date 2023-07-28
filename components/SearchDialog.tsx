@@ -198,8 +198,8 @@ export function SearchDialog() {
             <DialogTitle>MuniGPT</DialogTitle>
             <DialogDescription>
               At some point in the future, you will be able to ask me anything about zoning and land use regulations or the building code of any Florida county. 
-              But not today. AI has advanced so quickly that the engine that powers MuniGPT has become obsolete and needs to be rewritten from scratch.
-              Until then, you can use the latest, greatest AI model I'm working on at <a href="https://oyoops.com">oyoops.com</a>; but it can only speak on the Live Local Act (SB-102) - arguably more valuable!"
+              ... But not today. AI has been advancing so quickly that the engine powering MuniGPT has become obsolete in three short months and needs to be entirely rewritten.
+              Until then, you can use the latest, greatest AI model I am working on at <a href="https://oyoops.com">oyoops.com</a>; but it can only speak on the Live Local Act (SB-102)- arguably more valuable!"
             </DialogDescription>
             <hr />
             <button className="absolute top-0 right-2 p-2" onClick={() => setOpen(false)}>
