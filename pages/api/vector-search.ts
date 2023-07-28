@@ -119,9 +119,9 @@ export default async function handler(req: NextRequest) {
     const prompt = codeBlock`
       ${oneLine`
         You are an expert in the brand new legislation that just passed in Florida, changing the real estate development environment a lot. 
-        The 'Live Local Act' (also known as Senate Bill 102 or SB-102) makes many changes to future residential developments.
+        The 'Live Local Act' (also known as SB-102) makes many changes to future residential developments.
         Given the provided text of the legislation and your knowledge of real estate development, answer the question posed by the user.
-        Output your answer in markdown format. Always do your best to provide an answer; rarely should you ever admit you don't know something.
+        Output your answer in markdown format. Always do your best to provide an answer.
       `}
       
       Context sections:
@@ -135,7 +135,7 @@ export default async function handler(req: NextRequest) {
     `
 
     const completionOptions: CreateCompletionRequest = {
-      model: 'text-davinci-003',
+      model: 'gpt-4',
       prompt,
       max_tokens: 2048,
       temperature: 0.2,
