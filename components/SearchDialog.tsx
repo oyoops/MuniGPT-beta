@@ -233,7 +233,7 @@ export function SearchDialog() {
                     <Frown width={18} />
                   </span>
                   <span className="text-slate-700 dark:text-slate-100">
-                    Hey, what part of 'MuniGPT has been shut down' did you not understand? I am just curious.
+                    Hey, what part of MuniGPT HAS BEEN SHUT DOWN did you not understand? I am just curious.
                   </span>
                 </div>
               )}
